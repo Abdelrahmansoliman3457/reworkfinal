@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/select2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/rtl-style.css" /> -->
+    <title>Rework Website</title>
+</head>
+
+<body>
+    <div class="nav-layer"></div>
+
+    <!--start loader-->
+    <div class="loader">
+        <div class="logo-co-p">
+            <img src="imgs/logo.png" alt="image" />
+        </div>
+        <div class="main-loader-main">
+            <div class="spinner-square">
+                <div class="square-1 square"></div>
+                <div class="square-2 square"></div>
+                <div class="square-3 square"></div>
+            </div>
+        </div>
+    </div>
+    <!--End loader-->
+    <!--start header-->
+    <header class="header">
+        <div class="container h-100">
+            <a href="index.html" class="logo"><img src="imgs/logo.png" alt="img" /></a>
+            <!--show if user is not logged-->
+            <!-- <ul class="links">
+            <div class="flex-group-me mid-screen">
+              <img src="imgs/logo.png" class="logo mid-screen" alt="" />
+            </div>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="#">عامل حر</a></li>
+            <li><a href="#">صاحب مشروع</a></li>
+            <li><a href="#">ضمان حقوق</a></li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+            <li><a href="#">تواصل معنا</a></li>
+          </ul> -->
+            <!--show if user is logged-->
+            <ul class="links">
+                <div class="flex-group-me mid-screen">
+                    <img src="imgs/logo.png" class="logo mid-screen" alt="" />
+                </div>
+                <li><a href="home-page.html" class="flex-dbl-sm link-logged"><img src="imgs/profile.png" alt="img">
+                        <div>حسابي</div>
+                    </a></li>
+                <li><a href="myProjects.html" class="flex-dbl-sm link-logged"><img src="imgs/clipboard-text (2).png"
+                            alt="img">
+                        <div>مشاريعي</div>
+                    </a></li>
+                <li><a href="#" class="flex-dbl-sm link-logged"><img src="imgs/discover.png" alt="img">
+                        <div>تصفح المشاريع</div>
+                    </a></li>
+                <li><a href="wallet.html" class="flex-dbl-sm link-logged"><img src="imgs/dollar-squarehead.png"
+                            alt="img">
+                        <div>الرصيد</div>
+                    </a></li>
+            </ul>
+
+            <div class="flex-sm-gap">
+                <!-- <div  class="main-btn light btn-both"
+              ><div class="big-screen"><a href="login.html">تسجيل الدخول</a> / <a href="chooseRegister.html">مستخدم جديد</a></div>
+              <div class="small-screen">
+                <a href="chooseRegister.html"><i class="fa-solid fa-user-plus"></i></a> /
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
+              </div>
+            </div> -->
+                <a href="chat.html" class="logged-ico">
+                    <img src="imgs/message (1).png" alt="">
+                    <div class="dot-num regular">22</div>
+                </a>
+                <div class="logged-ico noti-btn">
+                    <img src="imgs/notification-bing.png" alt="">
+                    <div class="dot-num regular">3</div>
+                    <ul class="dropNotification">
+                        <div class="pad-gray relative-parent mb-2">
+                            <li class="mb-2">
+                                <a href="edit-invoice.html" class="flex-bet-noti activate">
+                                    <div class="noti-i-cont-bg">
+                                        <img src="imgs/Frame 271 (1).png" class="active-img d-none" alt="img">
+                                        <img src="imgs/Frame 271 (2).png" class="not-active-img d-block" alt="img">
+                                    </div>
+                                    <div class="regular clamped-noti">دعوة للعمل على مشروع “تعديل على الفيديوهات من
+                                        ناحية القص والتعديل على النصوص داخل الفيديو”</div>
+                                    <div class="time-noti regular">1 ساعة</div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="edit-invoice.html" class="flex-bet-noti">
+                                    <div class="noti-i-cont-bg">
+                                        <img src="imgs/Frame 271 (1).png" class="active-img d-none" alt="img">
+                                        <img src="imgs/Frame 271 (2).png" class="not-active-img d-block" alt="img">
+                                    </div>
+                                    <div class="regular clamped-noti">دعوة للعمل على مشروع “تعديل على الفيديوهات من
+                                        ناحية القص والتعديل على النصوص داخل الفيديو”</div>
+                                    <div class="time-noti regular">1 ساعة</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="edit-invoice.html" class="flex-bet-noti">
+                                    <div class="noti-i-cont-bg">
+                                        <img src="imgs/Frame 271 (1).png" class="active-img d-none" alt="img">
+                                        <img src="imgs/Frame 271 (2).png" class="not-active-img d-block" alt="img">
+                                    </div>
+                                    <div class="regular clamped-noti">دعوة للعمل على مشروع “تعديل على الفيديوهات من
+                                        ناحية القص والتعديل على النصوص داخل الفيديو”</div>
+                                    <div class="time-noti regular">1 ساعة</div>
+                                </a>
+                            </li>
+
+
+                        </div>
+                        <a href="notifications.html" class="main-btn up">عرض كل الاشعارات</a>
+
+                    </ul>
+                </div>
+                <div class="profile-btn">
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                    <div class="flex-dbl-sm ltr">
+                        <img src="imgs/Frame 271.png" alt="">
+                        <div class="big-screen">
+
+                            <div class="font-bold">م. محمد سامي</div>
+                            <div class="regular font15">
+                                CEO at CompanyX
+                            </div>
+                        </div>
+
+                    </div>
+                    <ul class="dropProfile">
+                        <div class="pad-gray">
+                            <li>
+                                <a href="profile.html" class="flex-in-drop">
+                                    <div class="noti-i-cont">
+                                        <img src="imgs/setting-2.png" alt="img">
+                                    </div>
+                                    <div class="regular">الاعدادات</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html" class="flex-in-drop">
+                                    <div class="noti-i-cont">
+                                        <img src="imgs/24-support.png" alt="img">
+                                    </div>
+                                    <div class="regular">الدعم الفني</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="flex-in-drop">
+                                    <div class="noti-i-cont">
+                                        <img src="imgs/logout.png" alt="img">
+                                    </div>
+                                    <div class="regular">تسجيل الخروج</div>
+                                </a>
+                            </li>
+                        </div>
+
+                    </ul>
+
+                </div>
+
+                <span class="coll-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+        </div>
+    </header>
+    <!--end header-->
+
+    <!--start login section-->
+    <div class="auth-section ">
+        <div class="container h-100">
+            <div class="all-auth with-border mb-4 pad-spe-main">
+                <div class="font22 fontbold">الاعدادات</div>
+            </div>
+            <form action="">
+
+                <div class="row">
+                    <div class="col-lg-3 mb-3">
+
+                        <div class="all-auth pad-sm-box with-border">
+                            <div class="bg-light-gary regular">
+                                <ul>
+                                    <li class="mb-2">
+                                        <a href="profile.html" class="profile-a ">
+                                            <img src="imgs/document-text.png" class="active-img d-none" alt="">
+                                            <img src="imgs/user-edit.png" class="main-img d-block" alt="">
+                                            <div>تعديل الملف الشخصي</div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="changePassword-profile.html" class="profile-a">
+                                            <img src="imgs/key-square.png" class="active-img d-none" alt="">
+                                            <img src="imgs/key-square.png" class="main-img d-block" alt="">
+                                            <div>تغيير كلمة المرور</div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="change-phone-profile.html" class="profile-a">
+                                            <img src="imgs/mobile (1).png" class="active-img d-none" alt="">
+                                            <img src="imgs/mobile (1).png" class="main-img d-block" alt="">
+                                            <div>تغيير رقم الهاتف</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="terms.html" class="profile-a">
+                                            <img src="imgs/shield.png" class="active-img d-none" alt="">
+                                            <img src="imgs/shield.png" class="main-img d-block" alt="">
+                                            <div>سياسة الاستخدام</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="privacy.html" class="profile-a">
+                                            <img src="imgs/archive-tick.png" class="active-img d-none" alt="">
+                                            <img src="imgs/archive-tick.png" class="main-img d-block" alt="">
+                                            <div>سياسة الخصوصية</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="h-100">
+                            <div class="all-auth with-border h-auth">
+                                <div class="styled-cont w-100 margin-b-auto">
+                                    <div class="row">
+                                        <div class="col-12 mb-4">
+                                            <div class="pad-profile">
+                                                <div class="flex-group-me w-100">
+                                                    <input type="file" id="img-up" onchange="uploadProfileIMG(this)"
+                                                        class="upload-main-in" type="file" hidden />
+
+                                                    <img src="imgs/user.jpg" class="profile-img" alt="">
+
+                                                    <div class="regular">
+                                                        <label for="img-up" class="up-style upload-or mb-1">
+                                                            <img src="imgs/gallery-add.png" alt="">
+                                                            <div>رفع صورة جديدة</div>
+                                                        </label>
+                                                        <div class="up-style remove-img" onclick="removeImg()">
+                                                            <img src="imgs/trash.png" alt="">
+                                                            <div>حذف الصورة</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12 mb-4">
+                                            <div class="main-input-cont ">
+                                                <input type="text" placeholder="الاسم الاول" class="main-input" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12 mb-4">
+                                            <div class="main-input-cont ">
+                                                <input type="text" placeholder="اسم العائلة" class="main-input" />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <div class="main-input-cont ">
+                                                <input type="email" placeholder="البريد الالكتروني"
+                                                    class="main-input" />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <div class="main-input-cont ">
+                                                <input type="text" placeholder="اسم المستخدم" class="main-input" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mb-4">
+                                            <div class="main-input-cont  main-select-main">
+                                                <select class="main-select " data-minimum-results-for-search="Infinity">
+                                                    <option value="" selected disabled>
+                                                        المسمى الوظيفي
+                                                    </option>
+                                                    <option value="">وظائف</option>
+                                                    <option value="">مجال 2</option>
+                                                    <option value="">مجال 3</option>
+                                                </select>
+                                                <div class="abs-select">
+                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <div class="main-input-cont ">
+                                                <select class="main-select-multi" multiple="multiple"
+                                                    data-placeholder="المهارات “10 مهارات كحد أقصى”">
+                                                    <option value="0">فنادق</option>
+                                                    <option value="1">مطاعم</option>
+                                                    <option value="2">ملاهي</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <div class="main-input-cont mb-0">
+                                                <textarea rows="7" class="main-textarea"
+                                                    placeholder="نبذة تعريفية “قم بوصف مهارتك واعمالك بشكل دقيق في سطور مختصرة وواضحة وتوضح ما هي الخدمة التي تقدمها وكيف تقوم بتقديمها لارضاء عملاءك”"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="w-100 end-class">
+                                    <button type="submit" class="main-btn w-100 up">حفظ التغييرات</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    </div>
+    <!--end login section-->
+
+    <!--start footer-->
+    <div class="footer">
+        <div class="down-footer dark">
+            <div class="container">
+                <div class="down-footer-r font14">جميع الحقوق محفوظة لصالح ReWork Platform</div>
+                <img src="imgs/logo.png" class="logo-fo" alt="logo">
+            </div>
+        </div>
+    </div>
+    <!--end footer-->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/main.js"></script>
+    <!--call select2 single-->
+    <script>
+        $(document).ready(function () {
+            $(".main-select").select2();
+        });
+    </script>
+    <!--call select2 multiple-->
+    <script>
+        $(document).ready(function () {
+            $(".main-select-multi").select2({
+                maximumSelectionLength: 10,
+                closeOnSelect: false,
+                placeholder: function () {
+                    $(this).data("placeholder");
+                },
+                dir: "rtl",
+                //   allowClear: true,
+            });
+        });
+    </script>
+    <!--change img profile-->
+    <script>
+        function uploadProfileIMG(input) {
+            input.nextElementSibling.src = URL.createObjectURL(
+                event.target.files[0]
+            );
+
+            input.nextElementSibling.classList.add("img-new-style");
+        }
+    </script>
+    <!--remove img profile-->
+    <script>
+        function removeImg() {
+
+            document.querySelector('.upload-main-in').value = ''
+            document.querySelector('.profile-img').src = 'imgs/solia.jpg'
+
+        }
+    </script>
+
+</body>
+
+
+</html>
