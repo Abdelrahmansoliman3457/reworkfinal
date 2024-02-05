@@ -53,17 +53,23 @@
                 <div class="flex-group-me mid-screen">
                     <img src="imgs/logo.png" class="logo mid-screen" alt="" />
                 </div>
-                <li><a href="home-page.html" class="flex-dbl-sm link-logged"><img src="imgs/profile.png" alt="img">
+                <li><a href="home-page.html" class="flex-dbl-sm link-logged"><img src="imgs/profile.png" class="active-img d-none" alt="img">
+                    <img src="imgs/profile (1).png" class="not-active-img" alt="img">
                         <div>حسابي</div>
                     </a></li>
-                <li><a href="myProjects.html" class="flex-dbl-sm link-logged"><img src="imgs/clipboard-text (2).png"
+                <li><a href="myProjects.html" class="flex-dbl-sm link-logged"><img class="active-img d-none" src="imgs/clipboard-text (3).png"
+                            alt="img">
+                            <img class="not-active-img" src="imgs/clipboard-text (2).png"
                             alt="img">
                         <div>مشاريعي</div>
                     </a></li>
-                <li><a href="#" class="flex-dbl-sm link-logged"><img src="imgs/discover.png" alt="img">
+                <li><a href="see-projects.html" class="flex-dbl-sm link-logged"><img class="active-img d-none" src="imgs/discover (1).png" alt="img">
+                    <img class="not-active-img" src="imgs/discover.png" alt="img">
                         <div>تصفح المشاريع</div>
                     </a></li>
-                <li><a href="wallet.html" class="flex-dbl-sm link-logged"><img src="imgs/dollar-squarehead.png"
+                <li><a href="wallet.html" class="flex-dbl-sm link-logged"><img class="active-img d-none" src="imgs/dollar-square (1).png"
+                            alt="img">
+                            <img class="not-active-img" src="imgs/dollar-squarehead.png"
                             alt="img">
                         <div>الرصيد</div>
                     </a></li>
@@ -198,21 +204,21 @@
                                 <ul>
                                     <li class="mb-2">
                                         <a href="profile.html" class="profile-a ">
-                                            <img src="imgs/document-text.png" class="active-img d-none" alt="">
+                                            <img src="imgs/user-edit.svg" class="active-img d-none" alt="">
                                             <img src="imgs/user-edit.png" class="main-img d-block" alt="">
                                             <div>تعديل الملف الشخصي</div>
                                         </a>
                                     </li>
                                     <li class="mb-2">
-                                        <a href="changePassword-profile.html" class="profile-a">
+                                        <a href="changePassword-edit.html" class="profile-a">
                                             <img src="imgs/key-square.png" class="active-img d-none" alt="">
-                                            <img src="imgs/key-square.png" class="main-img d-block" alt="">
+                                            <img src="imgs/key-square-1.svg" class="main-img d-block" alt="">
                                             <div>تغيير كلمة المرور</div>
                                         </a>
                                     </li>
                                     <li class="mb-2">
-                                        <a href="change-phone-profile.html" class="profile-a">
-                                            <img src="imgs/mobile (1).png" class="active-img d-none" alt="">
+                                        <a href="change-phone-edit.html" class="profile-a">
+                                            <img src="imgs/mobile.svg" class="active-img d-none" alt="">
                                             <img src="imgs/mobile (1).png" class="main-img d-block" alt="">
                                             <div>تغيير رقم الهاتف</div>
                                         </a>
@@ -220,14 +226,14 @@
                                     <li>
                                         <a href="terms.html" class="profile-a">
                                             <img src="imgs/shield.png" class="active-img d-none" alt="">
-                                            <img src="imgs/shield.png" class="main-img d-block" alt="">
+                                            <img src="imgs/shield-1.svg" class="main-img d-block" alt="">
                                             <div>سياسة الاستخدام</div>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="privacy.html" class="profile-a">
                                             <img src="imgs/archive-tick.png" class="active-img d-none" alt="">
-                                            <img src="imgs/archive-tick.png" class="main-img d-block" alt="">
+                                            <img src="imgs/archive-tick-1.svg" class="main-img d-block" alt="">
                                             <div>سياسة الخصوصية</div>
                                         </a>
                                     </li>
@@ -240,29 +246,19 @@
                             <div class="all-auth with-border ">
                                 <div class="styled-cont w-100 margin-b-auto">
                                     <div class="row">
-                                        <div class="col-12 mb-1">
+                                        <div class="col-12 mb-4">
                                             <div class="main-input-cont with-label">
-                                                <div class="regular mb-2">كلمة المرور الحالية</div>
+                                                <div class="regular mb-2">ادخل رقم الهاتف</div>
                                                 <input
-                                                  type="password"
-                                                  placeholder="كلمة المرور "
+                                                  type="number"
+                                                  placeholder="رقم الهاتف"
                                                   class="main-input inputPassSet"
                                                 />
-                                                <div
-                                                  class="abs-icon-input pointer-click check-setting-ic"
-                                                >
-                                                  <i class="fa-regular fa-eye"></i>
-                                                </div>
-                                              </div>
+                                            </div>
                                         </div>
-                                        <div class="flex-end-main mb-2">
-                                            <a href="forgetPassword.html" class="forget-pass"
-                                              >هل نسيت كلمة المرور؟</a
-                                            >
-                                          </div>
                                         <div class="col-12 mb-1">
                                             <div class="main-input-cont with-label">
-                                                <div class="regular mb-2">كلمة المرور الجديدة</div>
+                                                <div class="regular mb-2">كلمة المرور</div>
                                                 <input
                                                   type="password"
                                                   placeholder=" كلمة المرور"
@@ -275,38 +271,13 @@
                                                 </div>
                                               </div>
                                         </div>
-                                        <div class="valid-instructions mb-2">
-                                            <div class="flex-dbl-sm mb-1">
-                                                 <div class="sm-dot"></div>
-                                                <div>يجب ان تحتوي على .....</div>
-                                            </div>
-                                            <div class="flex-dbl-sm">
-        
-                                                <div class="sm-dot"></div>
-                                                <div>يجب ان تحتوي على .....</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 mb-4">
-                                            <div class="main-input-cont with-label">
-                                                <div class="regular mb-2">تأكيد كلمة المرور الجديدة</div>
-                                                <input
-                                                  type="password"
-                                                  placeholder="تاكيد كلمة المرور"
-                                                  class="main-input inputPassSet"
-                                                />
-                                                <div
-                                                  class="abs-icon-input pointer-click check-setting-ic"
-                                                >
-                                                  <i class="fa-regular fa-eye"></i>
-                                                </div>
-                                              </div>
-                                        </div>
+
                                     </div>
 
 
                                 </div>
-                                <div class="w-100 end-class">
-                                    <button type="submit" class="main-btn w-100 up">حفظ التغييرات</button>
+                                <div class="w-100 end-class mt-4">
+                                    <button type="submit" class="main-btn w-100 up">ارسال كلمة مرور لمرة واحدة</button>
                                 </div>
 
                             </div>
@@ -336,32 +307,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/select2.js"></script>
     <script src="js/main.js"></script>
-        <!-- PassWord Show and hide -->
-        <script>
-            const iconsPassSet = document.querySelectorAll(".check-setting-ic");
-      
-            if (iconsPassSet) {
-              iconsPassSet.forEach((ic) => {
-                ic.addEventListener("click", function () {
-                  let input = ic.parentElement.querySelector(".inputPassSet");
-                  showPassword(input, ic);
-                });
-              });
-            }
-      
-            // Function To Show And Hide Password
-            function showPassword(input, icon) {
-              if (input.type == "password") {
-                input.setAttribute("type", "text");
-                icon.innerHTML = `<i class="fa-regular fa-eye-slash"></i>`;
-              } else {
-                input.setAttribute("type", "password");
-                icon.innerHTML = `<i class="fa-regular fa-eye"></i>`;
-              }
-      
-              // input.focus();
-            }
-          </script>
+
 
 
 </body>

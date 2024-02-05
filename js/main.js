@@ -91,9 +91,14 @@ if (drop) {
 }
 
 // //  add active class to cuurent link
-// $(".links > li > a").each(function () {
-//   console.log(window.location.href);
-//   if (window.location.href.includes($(this).attr("href"))) {
-//     $(this).addClass("active");
-//   }
-// });
+$(".links > li > a").each(function () {
+  if (window.location.href.includes($(this).attr("href"))) {
+    $(this).addClass("active");
+  }
+});
+// //  add active class to cuurent link
+$(".bg-light-gary ul > li > a").each(function () {
+  if (window.location.href.includes($(this).attr("href"))) {
+    $(this).addClass("active");
+  }
+});
